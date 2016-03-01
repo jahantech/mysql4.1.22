@@ -1,0 +1,15 @@
+yum install wget glibc gcc perl glibc.i686 perl-DBI.x86_64  zlib.i686 openssl-devel
+wget mysql-4.1.22-2.el4.x86_64.rpm
+wget http://vault.centos.org/4.9/os/x86_64/CentOS/RPMS/mysql-4.1.22-2.el4.x86_64.rpm
+wget http://vault.centos.org/4.9/os/x86_64/CentOS/RPMS/mysql-server-4.1.22-2.el4.x86_64.rpm
+wget http://vault.centos.org/4.9/os/x86_64/CentOS/RPMS/mysql-devel-4.1.22-2.el4.x86_64.rpm
+wget http://vault.centos.org/4.9/os/x86_64/CentOS/RPMS/mysqlclient10-3.23.58-4.RHEL4.1.i386.rpm
+wget ftp://rpmfind.net/linux/centos/5.11/os/x86_64/CentOS/openssl097a-0.9.7a-12.el5_10.1.x86_64.rpm
+wget ftp://ftp.pbone.net/mirror/archive.fedoraproject.org/fedora/linux/core/1/i386/os/Fedora/RPMS/perl-DBD-MySQL-2.9002-1.i386.rpm
+rpm -ivh openssl097a-0.9.7a-12.el5_10.1.x86_64.rpm
+rpm -ivh mysql-4.1.22-2.el4.x86_64.rpm
+rpm -ivh mysqlclient10-3.23.58-4.RHEL4.1.i386.rpm
+rpm -ivh perl-DBD-MySQL-2.9002-1.i386.rpm
+rpm -ivh mysql-devel-4.1.22-2.el4.x86_64.rpm
+rpm -ivh mysql-server-4.1.22-2.el4.x86_64.rpm
+systemctl start mysqld
