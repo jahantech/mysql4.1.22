@@ -1,4 +1,5 @@
-#MySQL 4.1.22 on CentOS 6/7
+
+<b>MySQL 4.1.22 on CentOS 6/7</b>
 
 You can use these instruction to install MySQL 4.1.22 on CentOs 7. 
 
